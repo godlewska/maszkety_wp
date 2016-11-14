@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<meta charset="UTF-8">
+		<title> Maszkety - magazyn śląskich blogerów </title>
+		<meta name="description" content="Nasze numery.">
+		<meta name="keywords" content="Magazyn Maszkety, Maszkety, śląscy blogerzy, Śląsk">
+		<meta name="author" content="Katarzyna Godlewska">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic&subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Poiret+One|Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="about.css" type="text/css">
+	</head>
+
+
+	<body>
+
+		<header id="header" role="banner">
+		<div id="site-banner">
+	
+			<!-- Logo -->
+			<div id="logo">
+			<a class="site-logo" href="http://magazynmaszkety.pl" rel="home"><img src="images/logo.png" alt="logo"></a>
+
+			</div>
+
+			<!-- Menu główne -->
+
+			<button class="rwd-icon" onclick="responsiveFunction()">☰</button>
+			<nav class="main-navigation">
+			<ul class="main-menu" id="main-nav">
+				
+				<li class="menu-item1"><a href="link_main">Główna</a></li>
+				<li class="menu-item2"><a href="link_magazine">Magazyn</a></li>
+				<li class="menu-item3"><a href="link_fundation">Fundacja</a></li>
+				<li class="menu-item4"><a href="link_blog">Blog </a></li>
+				<li class="menu-item5"><a href="link_about">Zespół</a></li>
+				<li class="menu-item6"><a href="mailto:magazynmaszkety@gmail.com">Kontakt</a></li>
+				
+				
+			</ul>
+			</nav>
+
+			<!-- Menu social media -->
+			<nav class="social-navigation">
+			<ul class="social-menu">
+
+				<li class="social-item2"><a href="link_instagram"><img src="images/icon_insta.png" alt="logo"></a></li>
+				<li class="social-item3"><a href="mailto: magazynmaszkety@gmail.com"><img src="images/icon_mail.png" alt="logo"></a></li>
+				<li class="social-item1"><a href="link_facebook"><img src="images/icon_fb.png" alt="logo"></a></li>
+			</ul>
+			</nav>
+
+
+		
+		</div>
+
+		<script>
+			function responsiveFunction() {
+    			var x = document.getElementById("main-nav");
+   				 if (x.className === "main-menu") {
+       				 x.className += " responsive";} 
+
+       			else {
+       				 x.className = "main-menu";
+   					 }
+			}
+		</script>
+		</header>
+
+	<body>
+
+	<div class="full-text">
+
+		Nasza historia sięga roku 2014, kiedy grupa śląskich blogerek postanowiła założyć magazyn internetowy. Z wielu pomysłów na nazwę zostały wybrane "Maszkety", oznaczające w śląskiej gwarze "przysmaki, coś dobrego do jedzenia". Pierwszy numer został wydany w czerwcu 2014 roku, od tego czasu każdy numer kwartalnika tworzy kilkanaście osób naszego zgranego zespołu.
+		Stawiamy przede wszystkim na sezonowość i lokalność - nasze przepisy powstają zgodnie z porami roku, z produktów, które znajdziemy na każdym targu, a bardzo często opierają się na tradycyjach śląskich. W magazynie znajdują się również artykuły, o lokalnych wydarzeniach, ciekawostkach historycznych lub kulturalnych oraz o podróżach. 
+		
+	</div>
+	
+	<div class="grid">
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-MagdaCW')"><img src="images/team/magda_cielenga.jpg" alt="Magda"></button>
+		
+			<h1 class="name"> Magdalena Cielenga-Wiaterek</h1>
+			<h2 class="position"> Redaktor naczelna</h2>
+			<a href="http://zielenina.blogspot.com" class="address">Zielenina</a>
+			<p id="text-MagdaCW"> Gliwiczanka, Ślązaczka z dziada, pradziada. Wegetarianka od wielu lat. Prowadzi warsztaty kulinarne dla dzieci i dorosłych. </p>
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-UlaM')"><img src="images/team/urszula.jpg" alt="Ula"></button>
+
+			<h1 class="name"> Urszula Mazurowska</h1>
+			<h2 class="position"> Składmistrzyni</h2>
+			<a href="http://eksperymentsobotni.blox.pl/" class="address">Eksperyment sobotni </a>
+			<p id="text-UlaM"> Wielbicielka zapachu farby drukarskiej, upcyclingu, ładnie wydanych książek oraz smaków nieoczywistych. </p>
+
+
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-KasiaG')"><img src="images/team/katarzyna_griksa.jpg" alt="Kasia"></button>
+
+			<h1 class="name"> Katarzyna Godlewska</h1>
+			<h2 class="position"> Sekretarz redakcji</h2>
+
+			<a href="http://wedlug-lokatej.blogspot.com" class="address">Według Lokatej </a>
+			<p id="text-KasiaG">Miłośniczka dobrze parzonej kawy. Nie boi się wyzwań i lubi próbować nowych rzeczy, od azjatyckich potraw do sportów ekstremalnych. </p>
+
+		</div>
+
+	</div>
+
+	<div class="grid">
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-DagaG')"><img src="images/team/Dagmara_gladysz.jpg" alt="Daga"></button>
+
+			<h1 class="name"> Dagmara Gładysz-Raiwa </h1>
+			<h2 class="position">Korekta </h2>
+			<a href="http://pocztowkizirlandii.wordpress.com/" class="address">Pocztówki z Irlandii</a>
+			<p id="text-DagaG"> Filolog, która została kucharzem.Z miłości wyemigrowała do Irlandii. Kocha, gotuje, haftuje, zaś w wolnych chwilach uczy Irlandczyków języka polskiego. </p>
+
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-IdaK')"><img src="images/team/idakasprzyk.jpg" alt="Ida"></button>
+
+			<h1 class="name"> Ida Kasprzyk </h1>
+			<h2 class="position"> Korekta </h2>
+			<a href="http://www.fabrykotki.pl/" class="address">Fabrykotki </a>
+			<p id="text-IdaK"> Człowiek-orkiestra, czasami tylko gubi gdzieś dyrygenta. Maluje na koszulkach, rymuje, redaguje, fotografuje, śpiewa. Z wykształcenia polonistka, z wyboru mama, prywatnie leń i prostak. </p>
+
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-MagdaK')"><img src="images/team/magdalena_kozlowska.jpg" alt="Magda"></button>
+
+			<h1 class="name"> Magdalena Kozłowska </h1>
+			<h2 class="position"> Projekt winiety </h2>
+			<a href="http://www.rogalikblog.pl/" class="address">Rogalik blog kulinarny </a>
+			<p id="text-MagdaK">Celebrowanie wspólnych posiłków to dla niej ważna część codziennego życia. Z wykształcenia magister sztuki, z zamiłowania fotograf, prywatnie szczęśliwa mama. </p>
+
+
+		</div>
+		
+
+	</div>
+
+
+	<div class="grid">
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-AniaP')"><img src="images/team/ania_poloczek.jpg" alt="Ania"></button>
+
+			<h1 class="name"> Anna Poloczek </h1>
+			<a href="http://namiotle.pl" class="address">Na Miotle </a>
+			<p id="text-AniaP"> Ania to bohaterka naszego letniego numeru. Więcej informacji o jej pasjach znajdziecie na stronach magazynu. </p>
+
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-Berni')"><img src="images/team/bernadetta.jpg" alt="Bernadeta"></button>
+
+			<h1 class="name"> Bernadeta Jarnot-Manecka </h1>
+			<a href="http://mojkulinarnypamietnik.blogspot.com/" class="address">Mój kulinarny pamiętnik </a>
+			<p id="text-Berni">Gotuje, bo to jest coś, co sprawia, że życie nabiera barw. Największą radość sprawia jej, gdy córka po zjedzeniu całuje ją w policzek i mówi „Mami, to było pyszne”.</p>
+
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-AsiaF')"><img src="images/team/furgalinska.jpg" alt="Asia"></button>
+
+			<h1 class="name"> Joanna Furgalińska </h1>
+			<a href="http://www.furgaleria.pl/blog" class="address">Furgaleria </a>
+			<p id="text-AsiaF"> Urodzona w Katowicach autorka ilustracji do kilkudziesięciu książek. Wydała kilka autorskich książek dla dzieci oraz „Ślónsko godka – ilustrowany słownik dla Hanysów i Goroli”. </p>
+
+
+		</div>
+
+
+
+	</div>
+
+	<div class="grid">
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-MartaB')"><img src="images/team/marta_borowiec.jpg" alt="Marta"></button>
+
+			<h1 class="name"> Marta Borowiec </h1>
+			<a href="http://pass-the-food.blogspot.com/" class="address">Pass the food </a>
+			<p id="text-MartaB"> Marudzi ponad miarę, ale wszystko, co robi, stara się robić na 100%. Dzień bez koktajlu owocowego i kostki czekolady uważa za stracony.</p>
+
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-AnetaW')"><img src="images/team/aneta_wojciechowska.jpg" alt="Aneta"></button>
+
+			<h1 class="name"> Aneta Wojciechowska </h1>
+			<a href="http://www.planeta-smaku.pl/" class="address">Planet Smaku</a>
+			<p id="text-AnetaW">Nieustanna poszukiwaczka nowych smaków, miejsc i wrażeń. Przeciwniczka rutyny zarówno w życiu, jak i w kuchni. </p>
+
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-MagdaB')"><img src="images/team/magdalena_scibor.jpg" alt="Magda"></button>
+
+			<h1 class="name"> Magdalena Bury </h1>
+			<a href="http://mrs-berry.blogspot.com/" class="address">Mrs. Berry </a>
+			<p id="text-MagdaB">Z przypadku urzędniczka, z pasji fotograf kulinarny i szef własnej kuchni. Lubi eksperymenty kulinarne, ale o sprawdzonych przepisach nie zapomina i często do nich wraca. Nadmiernie używa (i spożywa!) orzechy i cynamon.</p>
+
+
+		</div>
+
+
+	</div>
+
+
+
+	<div class="grid">
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-IwonaS')"><img src="images/team/iwona.jpg" alt="Iwona"></button>
+
+			<h1 class="name"> Iwona Starzec </h1>
+			<a href="http://decorate-a-cake.blogspot.com/" class="address">Decorate a cake </a>
+			<p id="text-IwonaS"> Robi to, co kocha, i oddaje się temu bez reszty. Ma wiele marzeń, które ma w planach spełnić. Zawsze wesoła i uśmiechnięta, uwielbia ludzi, a oni uwielbiają ją! </p>
+
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-Basia')"><img src="images/team/basia_szympruch.jpg" alt="Basia"></button>
+
+			<h1 class="name"> Barbara Salamon-Szympruch </h1>
+			<a href="http://www.podrozehani.pl/" class="address">Podróże Hani - małe i duże</a>
+			<p id="text-Basia">Żona Kamila, mama Hani i Huberta. Zawodowo związana z turystyką, dlatego też w wolnych chwilach stara się pokazać dzieciakom wszystkie ciekawe miejsca w okolicy i nie tylko.</p>
+
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-Dominika')"><img src="images/team/dominika_zagrodzka.jpg" alt="Dominika"></button>
+
+			<h1 class="name"> Dominika Zagrodzka </h1>
+			<a href="http://foodie.blog.onet.pl/" class="address">Foodie</a>
+			<p id="text-Dominika"> Więcej czyta niż gotuje; zawsze gotowa do dyskusji o tym, co przed chwilą zjadła. Wielbicielka kruchego ciasta.</p>
+
+		</div>
+
+		
+	</div>
+
+	
+
+	<div class="grid">
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-GosiaG')"><img src="images/team/gosiagutral.jpg" alt="Gosia"></button>
+
+			<h1 class="name"> Małgorzata Gutral </h1>
+			<a href="http://osmykolorteczy.blog.pl/" class="address">Ósmy kolor tęczy </a>
+			<p id="text-GosiaG"> Niepoprawna marzycielka, kochająca dobrą książkę, kawę i zachody słońca nad morzem. Miłośniczka domowej, sezonowej kuchni i gotowania wspólnie z dziećmi. </p>
+
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-AniaM')"><img src="images/team/annamrowiec.jpg" alt="Ania"></button>
+
+			<h1 class="name"> Anna Mrowiec </h1>
+			<h2 class="position">Korekta</h2>
+			<a href="https://www.facebook.com/anna.mrowiec.969" class="address">Anna Mrowiec </a>
+			<p id="text-AniaM">Lyszczanka, mieszka i pracuje w Zabrzu. Czyta, słucha, ogląda. W wolnych chwilach także piecze lub gotuje. </p>
+
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-Agnieszka')"><img src="images/team/agnieszka_sanecka.jpg" alt="Agnieszka"></button>
+
+			<h1 class="name"> Agnieszka Stanecka </h1>
+			<h2 class="position">Korekta</h2>
+			<a href="http://wyslownik.blogspot.com/" class="address">Wysłownik </a>
+			<p id="text-Agnieszka">Człowiek o wielu twarzach: filolog, korektor, weganka, wielbicielka kotów, a po godzinach grafomanka i czytelniczka.</p>
+
+
+		</div>
+
+
+	</div>
+
+	<div class="grid">
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-Jozefina')"><img src="images/team/jozefina.jpg" alt="Józefina"></button>
+
+			<h1 class="name"> Józefina Hądz </h1>
+			<a href="http://goodmoodfood-goodmoodfood.blogspot.com/" class="address">Good Mood Food </a>
+			<p id="text-Jozefina">Matka dzieciom, żona mężowi. Mól książkowy i hummusożerca. Uwielbia zapach drożdży o poranku, kocha morze</p>
+
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-AniaZ')"><img src="images/team/anna_labonska.jpg" alt="Ania"></button>
+
+			<h1 class="name"> Anna Żak </h1>
+			<a href="http://ania-od-kuchni.blog.pl/" class="address">Ania od kuchni </a>
+			<p id="text-AniaZ">Jest wierną miłośniczką Śląska i Ślązaków oraz kultywuje na co dzień górnośląskie tradycje. Zwolenniczka kuchni smacznej, zdrowej i nieskomplikowanej.</p>
+
+
+		</div>
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-AgataN')"><img src="images/team/agata.jpg" alt="Agata"></button>
+
+			<h1 class="name"> Agata Nastulak </h1>
+			<a href="http://dreamytaste.blogspot.com/" class="address">Jaśmina w kuchni </a>
+			<p id="text-AgataN">Zainteresowana kuchniami świata, zwłaszcza indyjską. Miłośniczka zielonej herbaty i dobrej książki. Osoba skromna, zawsze uśmiechnięta i ciekawa świata. </p>
+
+
+		</div>
+
+
+	</div>
+
+	<div class="grid">
+
+		<div class="bp-col-push-1-8 bp-col-1-4">
+
+			<button class="image" onclick="toggleFunction('text-EwaS')"><img src="images/team/ewa_siuda.jpg" alt="Ewa"></button>
+
+			<h1 class="name"> Ewa Siuda-Szymanowska </h1>
+			<a href="http://gebawniebie.blogspot.com/" class="address">Gęba w niebie </a>
+			<p id="text-EwaS">Piecze, gotuje, pisze, śpiewa, odkrywa świat z małym człowiekiem. Uwielbia czekoladę i dobre filmy. </p>
+
+
+		</div>
+
+	</div>
+
+	<script>
+               function toggleFunction(textId){
+                   var div = document.getElementById(textId);
+                   
+                   if (div.style.display =="inline-block"){
+                       div.style.display = "none";
+                       return;
+                   }
+                   div.style.display ="inline-block";
+             }
+           </script>
+
+
+	</body>
+
+
+	<footer id="footer">
+		<div id="site-footer">
+			<nav class="footer-navigation">
+			<ul class="footer-menu">
+				
+				<li class="footer-item1"><a href="link_main">Główna</a></li>
+				<li class="footer-item2"><a href="link_magazine">Magazyn</a></li>
+				<li class="footer-item3"><a href="link_fundation">Fundacja</a></li>
+				<li class="footer-item4"><a href="link_blog">Blog </a></li>
+				<li class="footer-item5"><a href="link_about">Zespół</a></li>
+				<li class="footer-item6"><a href="link_contact">Kontakt</a></li>
+			</ul>
+			</nav>
+
+			<p id="copyrights"> © Maszkety 2016 </p>
+		</div>
+	</footer>
+
+
+</html>

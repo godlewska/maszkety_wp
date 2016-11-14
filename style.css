@@ -1,0 +1,939 @@
+/*
+Theme Name: Magazyn Maszkety
+Author: Katarzyna Godlewska
+Description: Magazyn Maszkety to szablon stworzony specjalnie dla strony magazynu oraz powiązanej z nim fundacji.
+Version: 1.0
+*/
+
+html {
+
+	min-height: 100%;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+
+	display: inline-block;
+	margin: 0px;
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+	
+}
+
+/* Nagłówek */
+
+#header {
+
+	width: 100%;
+	padding: 10 20;
+	display: inline-block;
+	clear: both;
+	overflow: auto;
+	box-sizing: border-box;
+
+}
+
+/* Logo */
+
+	.logo, .main-navigation, .footer-navigation {
+
+		display: inline-block;
+		float: left;
+	}
+
+		.site-logo img {
+
+			height: 80px;
+			float: left;
+			padding: 0 20px;
+			display: inline-block;
+	
+		}
+
+/* Menu główne*/
+
+		.main-navigation ul {
+
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			float: left;
+			display: inline-block;
+	
+		}
+
+		.rwd-icon {
+
+			display: none;
+		}
+
+		.menu-item1, .menu-item2,
+		.menu-item3, .menu-item4,
+		.menu-item5, .menu-item6 {
+
+			display: inline-block;
+			float: left;
+		}
+
+			.menu-item1 a, .menu-item2 a,
+			.menu-item3 a, .menu-item4 a,
+			.menu-item5 a, .menu-item6 a {
+
+				float: left;
+				text-align: left;
+				font-size: 100%;
+				font-weight: 300;
+				font-family: Roboto, sans-serif;
+				color: #545454;
+				padding: 20px 12px;
+				text-decoration: none;
+				display: inline-block;
+
+			}
+
+			.menu-item1 a:hover, .menu-item2 a:hover,
+			.menu-item3 a:hover, .menu-item4 a:hover,
+			.menu-item5 a:hover, .menu-item6 a:hover {
+
+				color: #B4CED6;
+
+			}
+
+	@media only screen and (max-width: 760px) {
+
+		.logo, .site-logo img {
+
+			float: right;
+			padding: 0px;
+		}
+
+		.menu-item1, .menu-item2,
+		.menu-item3, .menu-item4,
+		.menu-item5, .menu-item6 {
+
+			display: none;
+		}
+
+		.rwd-icon {
+
+			float: left;
+			display: block;
+			margin-top: 2.2vh;
+			margin-left: 2vw;
+			text-decoration: none;
+			color: #363636;
+			font-size: 30px;
+		}
+
+
+		.main-menu.responsive {
+
+			position: relative;
+
+		}
+
+		.main-menu.responsive .rwd-icon {
+
+			position: absolute;
+			right: 0;
+			top: 0;
+		}	
+
+		.main-menu.responsive .menu-item1 {
+
+			float: none;
+			display: block;
+			margin-left: -30px;
+			
+		}
+
+		.main-menu.responsive .menu-item2,
+		.main-menu.responsive .menu-item3,
+		.main-menu.responsive .menu-item4,
+		.main-menu.responsive .menu-item5,
+		.main-menu.responsive .menu-item6 {
+
+			float: none;
+			display: block;
+			margin-left: -30px;
+		
+		}
+
+		.main-menu.responsive .menu-item1 a {
+
+			display: block;
+			text-align: left;
+			bottom: 15px;
+			margin-top: 60px;
+			padding: 5px;
+			
+
+		}
+
+
+		.main-menu.responsive .menu-item2 a,
+		.main-menu.responsive .menu-item3 a,
+		.main-menu.responsive .menu-item4 a,
+		.main-menu.responsive .menu-item5 a,
+		.main-menu.responsive .menu-item6 a {
+
+			display: block;
+			text-align: left;
+			bottom: 15px;
+			top: 10px;
+			padding: 5px;
+		}
+		
+
+	}
+
+/*Menu social media */
+
+	.social-navigation {
+		float: right;
+		display: inline-block;
+	}
+
+		.social-navigation ul {
+
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			float: right;
+			display: inline-block;
+	
+		}
+
+
+		.social-item1, .social-item2,
+		.social-item3 {
+
+			display: inline-block;
+			float: right;
+		}
+
+
+			.social-item1 a img, .social-item2 a img,
+			.social-item3 a img {
+
+				float: right;
+				padding: 20px 6px;
+				display: inline-block;
+				height: 20px;
+
+			}
+
+	@media only screen and (max-width: 760px) {
+
+			.social-item1 a img, .social-item2 a img,
+			.social-item3 a img {
+
+				display: none;
+			}
+			}
+
+/***************************************************************************************/
+/* Strona główna*/
+
+/* Zdjęcie oraz napisy na nim */
+
+	.photo-content {
+
+		text-align: center;
+		width: 100%;
+		position: relative;
+		box-sizing: border-box;
+	}
+
+
+		.photo-content img{
+
+			width: 100%;
+			margin-right: -5px;
+			margin-left: -5px;
+			height: auto;
+		}
+
+
+		.main-text {
+			position: absolute;
+			top: 10vw;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+		}
+
+			.main-text span.magazine-title {
+
+				font-weight: 300;
+				font-family: Poiret One, sans-serif;
+				color: #BABABA;
+				letter-spacing: 0.2vw;
+				word-wrap: break-word;
+				font-size: 5.8vw;
+			
+			}
+
+			.main-text span.recipie-title {
+
+				font-size: 3vw;
+				font-weight: 300;
+				font-family: Poiret One, sans-serif;
+				color: #BABABA;
+				letter-spacing: 0.15vw;
+				word-wrap: break-word;
+			}
+
+
+			/* Przycisk do przepisu*/
+
+			.main-text .recipie-button {
+
+				display: inline-block;
+				border: 0.1vw solid #cccccc;
+				font-family: Poiret One, sans-serif;
+				height: 2.2vw;
+				width: 10vw;
+				text-align: center;
+	            padding: 0.4vw 0.9vw;
+	            margin-top: 2vh;
+
+			}
+
+			.main-text a.recipie-button {
+
+				text-decoration: none;
+				color: #FFFFFF;
+				font-size: 1.5vw;
+			}
+
+			.main-text a.recipie-button:hover {
+
+				background-color: #CCCCCC;
+				filter:alpha(opacity=60); /*IE*/
+				opacity: 0.6;
+	            -moz-opacity:0.6; /*Old MF*/
+			}
+
+
+	/* Trzy kolumny */
+
+	.content-columns {
+
+		margin-top: 40px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+		/* O nas */
+
+		.about {
+
+			position: relative;
+			float: left;
+			display: inline-block;
+			width: 420px;
+		}
+
+
+
+		.about-column .about-title {
+
+				width: 60%;
+				font-family: Poiret One, sans-serif;
+				font-size: 45px;
+				text-align: center;
+				margin-top: 40px;
+				letter-spacing: 2px;
+				font-weight: 300;
+				line-height: 80px;
+				color: #545454;
+
+
+			}
+
+			.about-text {
+
+				width: 68%;
+				margin-left: 80px;
+				margin-top: 30px;
+				text-align: center;
+				font-family: Roboto, sans-serif;
+				font-size: 16px;
+				font-weight: 300;
+				display: block;
+				color: #545454;
+			}
+
+			/* Przycisk do Zespół*/
+
+			.about-column .about-button {
+
+				display: inline-block;
+				border: 1px solid #cccccc;
+				font-family: Poiret One, sans-serif;
+				height: 30px;
+				width: 120px;
+				text-align: center;
+	            padding: 8px 10px;
+	            margin-top: 20px;
+			}
+
+			.about-column a.about-button {
+
+				text-decoration: none;
+				color: #545454;
+				font-size: 20px;
+			}
+
+			.about-column a.about-button:hover {
+
+				background-color: #CCCCCC;
+				filter:alpha(opacity=60); /*IE*/
+				opacity: 0.6;
+	            -moz-opacity:0.6; /*Old MF*/
+			}
+
+
+
+		/* Fundacja */
+
+		.fundation {
+
+			position: relative;
+			float: left;
+			border-top: none;
+			border-left: 1px solid #CCCCCC;
+			border-bottom: none;
+			border-right: 1px solid #CCCCCC;
+			display: inline-block;
+			width: 420px;
+		
+		}
+
+			.fundation-logo img {
+
+				margin: auto;
+				width: 60%;
+
+			}
+
+
+			.fundation-text {
+
+				width: 70%;
+				margin: auto;
+				text-align: center;
+				font-family: Roboto, sans-serif;
+				font-size: 16px;
+				font-weight: 300;
+				color: #545454;
+				margin-top: 15px;
+
+			}
+
+			/* Przycisk do Fundacja*/
+
+			.fundation-text .fundation-button {
+
+				display: inline-block;
+				border: 1px solid #cccccc;
+				font-family: Poiret One, sans-serif;
+				height: 30px;
+				width: 120px;
+				text-align: center;
+	            padding: 8px 10px;
+	            margin-top: 60px;
+
+			}
+
+			.fundation-text a.fundation-button {
+
+				text-decoration: none;
+				color: #545454;
+				font-size: 20px;
+			}
+
+			.fundation-text a.fundation-button:hover {
+
+				background-color: #CCCCCC;
+				filter:alpha(opacity=60); /*IE*/
+				opacity: 0.6;
+	            -moz-opacity:0.6; /*Old MF*/
+			}
+
+
+		/* Współpraca */
+
+		.cooperation {
+
+			position: relative;
+			float: left;
+			display: inline-block;
+			width: 400px;
+		}
+
+			.cooperation-column .cooperation-title {
+
+				width: 60%;
+				font-family: Poiret One, sans-serif;
+				font-size: 45px;
+				text-align: center;
+				margin-top: 40px;
+				letter-spacing: 2px;
+				font-weight: 300;
+				line-height: 80px;
+				color: #545454;
+				margin-left: 45px;
+
+
+			}
+
+			.cooperation-text {
+
+				width: 70%;
+				margin-left: 75px;
+				text-align: center;
+				font-family: Roboto, sans-serif;
+				font-size: 16px;
+				font-weight: 300;
+				display: block;
+				color: #545454;
+				margin-top: 30px;
+			}
+
+			/* Przycisk do Współpraca*/
+
+			.cooperation-column .cooperation-button {
+
+				display: inline-block;
+				border: 1px solid #cccccc;
+				font-family: Poiret One, sans-serif;
+				height: 30px;
+				width: 120px;
+				text-align: center;
+	            padding: 8px 10px;
+	            margin-top: 80px;
+	            margin-left: 30px;
+
+			}
+
+			.cooperation-column a.cooperation-button {
+
+				text-decoration: none;
+				color: #545454;
+				font-size: 20px;
+			}
+
+			.cooperation-column a.cooperation-button:hover {
+
+				background-color: #CCCCCC;
+				filter:alpha(opacity=60); /*IE*/
+				opacity: 0.6;
+	            -moz-opacity:0.6; /*Old MF*/
+			}
+
+	@media only screen and (max-width: 1255px) {
+
+		.fundation {
+
+			border-right: none;
+		}
+	}			
+
+
+
+	@media only screen and (max-width: 400px) {
+
+		.about, .cooperation, .fundation {
+				
+			width: 320px;
+		}
+
+			.about-column .about-title {
+
+				margin-left: 40px;
+			}
+
+			.about-column .about-button {
+
+				margin-left: 50px;
+				margin-top: 20px;
+			}
+
+
+			.fundation-logo img {
+
+				margin-left: 40px;
+			}
+
+			.fundation-text {
+
+				margin-left: 70px;
+			}
+
+			.fundation-text .fundation-button {
+
+				margin-left: 12px;
+				margin-top: 20px;
+			}
+
+			.cooperation-column .cooperation-button {
+
+				margin-left: 60px;
+				margin-top: 20px;
+			}
+
+		}
+
+
+/*********************************************************************************************/
+/*Strona "Magazyn"*/
+
+/* Grid */
+
+		.grid {
+
+			display: block;
+		}
+
+		.grid:after {
+
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.grid [class*="col-"] {
+
+			vertical-align: top;
+			padding-left: 5px;
+			padding-right: 5px;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box; /* iOS <= 4 i Android <= 2.3 */
+			-moz-box-sizing: border-box; /* MF */
+			display: block;
+		}
+
+
+		.col-1-1 {  width: 100%;
+				 	float: none; }
+
+		.col-1-2 {  width: 50%;
+					float: left; }
+
+		.col-1-3 { 	width: 33.33%;
+					float: left; }
+
+		.col-1-4 { 	width: 24%;
+					float: left; }
+
+		.col-1-8 {  width: 12.5%;
+					float: left; }
+
+		.col-2-3 {  width: 66.66%;
+					float: left; }
+
+		.col-3-4 {  width: 75%;
+					float: left; }
+
+
+		[class*="col-push-"] { position: relative; }
+
+		.col-push-1-1 { left: 100%; }
+		.col-push-1-2 { left: 50%; }
+		.col-push-1-3 { left: 33.333333%; }
+		.col-push-1-4 { left: 25%; }
+		.col-push-1-8 { left: 12.5%; }
+		.col-push-2-3 { left: 66.666666%; }
+		.col-push-3-4 { left: 75%; }
+
+		[class*="col-pull-"] { position: relative; }
+
+		.col-pull-1-1 { right: 100%; }
+		.col-pull-1-2 { right: 50%; }
+		.col-pull-1-3 { right: 33.333333%; }
+		.col-pull-1-4 { right: 25%; }
+		.col-pull-1-8 { right: 12.5%; }
+		.col-pull-2-3 { right: 66.666666%; }
+		.col-pull-3-4 { right: 75%; }
+
+			[class*="issue"] img {
+
+				max-width: 90%;
+				margin-top: 10vh;
+			
+			}
+
+
+		@media only screen and (min-width: 760px)
+		{
+			.bp-col-1-1 {  width: 100%;
+				 	float: none; }
+
+			.bp-col-1-2 {  width: 50%;
+					float: left; }
+
+			.bp-col-1-3 { 	width: 33.33%;
+					float: left; }
+
+			.bp-col-1-4 { 	width: 24%;
+					float: left; }
+
+			.bp-col-1-8 {  width: 12.5%;
+					float: left; }
+
+			.bp-col-2-3 {  width: 66.66%;
+					float: left; }
+
+			.bp-col-3-4 {  width: 75%;
+					float: left; }
+
+
+			.bp-col-push-1-1 { left: 100%; }
+			.bp-col-push-1-2 { left: 50%; }
+			.bp-col-push-1-3 { left: 33.333333%; }
+			.bp-col-push-1-4 { left: 25%; }
+			.bp-col-push-1-8 { left: 12.5%; }
+			.bp-col-push-2-3 { left: 66.666666%; }
+			.bp-col-push-3-4 { left: 75%; }
+
+			.bp-col-pull-1-1 { right: 100%; }
+			.bp-col-pull-1-2 { right: 50%; }
+			.bp-col-pull-1-3 { right: 33.333333%; }
+			.bp-col-pull-1-4 { right: 25%; }
+			.bp-col-pull-1-8 { right: 12.5%; }
+			.bp-col-pull-2-3 { right: 66.666666%; }
+			.bp-col-pull-3-4 { right: 75%; }
+
+		}
+
+/************************************************************************************************/
+/* Strona "Fundacja" */
+
+.photo-fund {
+
+			width: 100%;
+			position: relative;
+			box-sizing: border-box;
+			margin-top: 5vh;
+		}
+
+
+			.photo-fund img{
+
+				width: 100%;
+				margin-right: -5px;
+				margin-left: -5px;
+				height: auto;
+
+			}
+
+
+		.fund-title {
+
+			font-family: Poiret One, sans-serif;
+			font-weight: 300;
+			font-size: 45px;
+			color: #545454;
+			margin-top: 15vh;
+			line-height: 10vh;
+		}
+
+			.fund-text {
+
+				font-family: Roboto, sans-serif;
+				font-weight: 300;
+				color: #545454;
+				width: 60%;
+				text-align: center;
+				margin: auto;
+				line-height: 4vh;
+			}
+
+		.donate-title {
+
+			font-family: Poiret One, sans-serif;
+			font-weight: 300;
+			font-size: 40px;
+			color: #545454;
+			margin-top: 10vh;
+			line-height: 10vh;
+		}
+
+/************************************************************************************************/
+/* Strona "O nas" */
+
+.name {
+
+
+			float: left;
+			text-align: left;
+			font-family: Poiret One, sans-serif;
+			font-weight: 300;
+			font-size: calc(10px + 1.7vw);
+			margin-bottom: 0;
+			clear: both;
+
+		}
+
+		.position {
+
+			
+			float: left;
+			font-family: Poiret One, sans-serif;
+			font-weight: 200;
+			font-size: calc(8px + 1.5vw);
+			margin-top: 0;
+			margin-bottom: 0;
+			clear: both;
+
+		}
+
+		.address {
+
+			float: left;
+			font-family: Poiret One, sans-serif;
+			font-weight: 200;
+			font-size: calc(8px + 1.5vw);
+			margin-top: 0;
+			clear: both;
+			text-decoration: none;
+			color: #545454;
+			display: inline-block;
+			margin-bottom: 10px;
+			text-align: left;
+
+		}
+
+		.address a {
+			display: inline-block;
+			clear: both;
+
+
+		}
+
+		.address:hover {
+
+			color: #B4CED6;
+		}
+
+		#text-MagdaCW, #text-UlaM, #text-KasiaG,
+		#text-DagaG, #text-IdaK, #text-MagdaK,
+		#text-AniaP, #text-Berni, #text-AsiaF,
+		#text-MartaB, #text-AnetaW, #text-MagdaB,
+		#text-IwonaS, #text-Basia, #text-Dominika,
+		#text-GosiaG, #text-AniaM, #text-Agnieszka,
+		#text-Jozefina, #text-AniaZ, #text-AgataN,
+		#text-EwaS
+		 {
+
+			display: none;
+			font-family: Poiret One, sans-serif;
+			font-weight: 300;
+			font-size: calc(6px + 1.2vw);
+			text-align: justify;
+			float: left;
+			clear: both;
+			width: 90%;
+		}
+
+
+
+
+
+/************************************************************************************************/
+			/* Stopka */
+
+		#footer {
+
+			width: 100%;
+			display: inline-block;
+			clear: both;
+			overflow: auto;
+			box-sizing: border-box;
+			margin-top: 50px;
+			background-color: #F2F2F2;
+			filter:alpha(opacity=60); /*IE*/
+			opacity: 0.6;
+	        -moz-opacity:0.6; /*Old MF*/
+
+		}
+
+			.footer-navigation ul {
+
+				width: 100%;
+				padding: 0;
+				margin: 0 0 0 8vw;
+				margin:;
+				list-style: none;
+				float: left;
+				display: inline-block;
+	
+			}
+
+
+				.footer-item1, .footer-item2,
+				.footer-item3, .footer-item4,
+				.footer-item5, .footer-item6 {
+
+					display: inline-block;
+					float: left;
+				}
+
+				.footer-item1 a, .footer-item2 a,
+				.footer-item3 a, .footer-item4 a,
+				.footer-item5 a, .footer-item6 a {
+
+					float: left;
+					text-align: left;
+					font-size: 100%;
+					font-weight: 300;
+					font-family: Roboto, sans-serif;
+					color: #545454;
+					padding: 20px 12px;
+					text-decoration: none;
+					display: inline-block;
+
+				}
+
+				.footer-item1 a:hover, .footer-item2 a:hover,
+				.footer-item3 a:hover, .footer-item4 a:hover,
+				.footer-item5 a:hover, .footer-item6 a:hover {
+
+					color: #8AA3AB;
+
+				}
+
+			#copyrights {
+
+				float: right;
+				font-family: Roboto, sans-serif;
+				margin-right: 6vw;
+				margin-top: 20px;
+			}
+
+		@media only screen and (max-width: 760px) {
+
+			.footer-item1, .footer-item2,
+			.footer-item3, .footer-item4,
+			.footer-item5, .footer-item6 {
+
+				display: none;
+
+			}
+
+			#copyrights {
+
+				text-align: center;
+				margin: 20px 0;
+				float: none;
+			}
+
+		}
