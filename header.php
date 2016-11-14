@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
-		<title> <?php wp_title(); ?></title>
+		<title> <?php wp_title("",true); ?> | <?php bloginfo('name'); ?></title>
 		<meta name="description" content="Lokalne i sezonowe przepisy, a do tego co nieco o historii i kulturze Śląska.">
 		<meta name="keywords" content="Magazyn Maszkety, Maszkety, śląscy blogerzy, Śląsk">
 		<meta name="author" content="Katarzyna Godlewska">
